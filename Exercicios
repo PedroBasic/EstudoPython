@@ -1,0 +1,605 @@
+// Segue abaixo alguns exemplos de atividade realizadas em python. Atividades aprendidas através do Curso em Video
+
+# Criar um programa que mostre o número de horas trabalhadas e a quantidade de horas trabalhadas em um mês. No final mostre o valor recebido por mês.
+
+# Entrada de dados
+horaTrabalhada = int(input('Digite a quantidade de hora trabalhada: '))
+valorHora = int(input("Quanto vocẽ ganha por hora? "))
+
+# Processamento
+valorTotal = horaTrabalhada * valorHora
+
+# Saída de dados
+print(f"O valor total recebido no mês é {valorTotal}")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Criar um programa que apresenta qual o maior número, informado pelo user.
+
+# Entrada de dados
+n1 = int(input("Informe o primeiro número: "))
+n2 = int(input("Informe o segundo número: "))
+
+# Processamento e Saida de dados.
+if ((n1 > n2)):
+  print(f"O número {n1} é maior que o segundo")
+else:
+  print(f"O número {n2} é maior que o primeiro")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Entrada de Dados
+valor = int(input("Informe o Primeiro valor: "))
+
+# Processamento e Saida de Dados
+if ((valor > 0) and (valor % 2 == 0)):
+  print(f"O valor {valor} é par é positivo")
+elif  ((valor < 0) and (valor % 2 != 0)):
+  print(f"O valor {valor} é impar é negativo")
+elif ((valor < 0) and (valor % 2 == 0)):
+  print(f"O valor {valor} é par é negativo")
+elif(( valor > 0) and (valor % 2 != 0)):
+    print(f"O valor {valor} é impar é positivo")
+else:
+  print(f"O valor {valor} é invalido")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Entrada de dados
+sexo_usuario = input("Informe o sexo do usuário F/M: ")
+
+# Processamento e Saida de dados.
+if (sexo_usuario.lower().upper() == "F"):
+  print(f"O sexo informado foi {sexo_usuario}: Feminino")
+elif (sexo_usuario.lower().upper() == "M"):
+  print(f"O sexo informado foi {sexo_usuario}: Masculino")
+else:
+  print(f"O sexo informado foi {sexo_usuario}: Sexo inválido")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Entrada de Dados
+letra_digitada = str(input("Informe uma Letra: "))
+vogal = ['a', 'e', 'i', 'o', 'u']
+
+# Processamento e Saida de dados.
+if (letra_digitada in vogal):
+  print(f"A letra {letra_digitada} é uma vogal")
+else:
+  print(f"A letra {letra_digitada} é uma consoante")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Entrada de dados
+s1 = {1, 2, 3, 4, 5, 6}
+s2 = {6, 7, 8, 9}
+
+print(s1&s2)
+
+# Apresenta o elemento que se repete 2 vezes nos dois conjutos. S1 & S2
+
+# =========================================================
+
+# Entrada de dados
+primeira_nota = float(input("Informe a primeta Nota: "))
+segunda_nota = float(input("Informe a segunda Nota: "))
+
+#Processamento
+somaNotas = primeira_nota + segunda_nota
+media = somaNotas / 2
+
+# Saida de dados
+if ((media >= 7) and (media < 9)):
+  print(f"A média do aluno foi {media} e ele foi APROVADO")
+elif (media < 6):
+  print(f"A média do aluno foi {media} e ele foi REPROVADO")
+elif (media == 10):
+  print(f"A média do aluno foi {media} e ele foi APROVADO COM DISTINÇÃO")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Entrada de Dados
+n1 = int(input("Informe o primeiro número: "))
+n2 = int(input("Informe o segundo número: "))
+n3 = int(input("Informe o terceiro número: "))
+
+# Processamento e Saida de dados.
+if(n1 > n2 and n1 > n3):
+  print(f"Primeiro número e o maior: {n1}")
+elif(n2 > n1 and n2 > n3):
+  print(f"Segundo número e o maior: {n2}")
+else:
+  print(f"Terceiro número e o maior: {n3}")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Entrada de dados
+n1 = int(input("Informe o primeiro número: "))
+n2 = int(input("Informe o segundo número: "))
+n3 = int(input("Informe o terceiro número: "))
+
+# Processamento
+numeros = [n1, n2, n3]
+
+# Saida de dados
+for items in numeros:
+  print(items)
+print(f"O maior número é {max(numeros)}")
+print(f"O menor número é {min(numeros)}")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Entrada de dados
+
+produto1 = float(input("Informe o preço do Primeiro Produto: "))
+produto2 = float(input("Informe o preço do Segundo Produto: "))
+produto3 = float(input("Informe o preço do Terceiro Produto: "))
+
+# Processamento e Saida de dados.
+
+if (produto1 < produto2 and produto1 < produto3):
+  print(f"Você deve levar o Primeiro produto, por se o mais barato valor R${produto1} reais.")
+elif (produto2 < produto1 and produto2 < produto3):
+  print(f"Você deve levar o Segundo produto, por se o mais barato valor R${produto2} reais.")
+else:
+  print(f"Você deve levar o Terceiro produto, por se o mais barato valor R${produto3} reais.")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Entrada de dados
+num1 = int(input("Informe o 1° número: "))
+num2 = int(input("Informe o 2° número: "))
+num3 = int(input("Informe o 3° número: "))
+
+# Processamento
+valores = [num1, num2, num3]
+valores.sort() # sort() -> permite que os valores sejam ordenados de forma decrescente do maior para o menor.
+
+# Saida de dados
+print(valores)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Entrada de dados
+periodo_ensino = str(input("Informe o período de ensino: Matutino 'M' Vespertino 'V' Noturno 'N': "))
+
+# Processamento e Saida de dados.
+if (periodo_ensino.lower().upper() == "M"):
+  print("Bom dia")
+elif (periodo_ensino.lower().upper() == "V"):
+  print("Boa tarde")
+elif (periodo_ensino.lower().upper() == "N"):
+  print("Boa noite")
+else:
+  print("Valor Inválido")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Entrada de dados
+
+salario_colaborador = float(input("Informe seu Salario Colaborador: "))
+comisao = float
+salario_final = float
+
+# Processamento
+if(salario_colaborador <= 280.00):
+  comisao = salario_colaborador * 0.20
+  salario_final = salario_colaborador + comisao
+elif(salario_colaborador >= 280.00 and salario_colaborador <= 700.00):
+  comisao = salario_colaborador * 0.15
+  salario_final = salario_colaborador + comisao
+elif(salario_colaborador >= 700.00 and salario_colaborador <= 1500.00):
+  comisao = salario_colaborador * 0.10
+  salario_final = salario_colaborador + comisao
+elif(salario_colaborador > 1500.00):
+  comisao = salario_colaborador * 0.05
+  salario_final = salario_colaborador + comisao
+
+
+# Saida de dados
+
+novo_salario = salario_final
+
+print(f"Salário antes do reajuste R${salario_colaborador}")
+print(f"Salario percetual de aumento R${salario_final}")
+print(f"Valor do salario aumentado {salario_final}")
+print(f"Salario final R${novo_salario}")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Entrada de dados
+valorHora = float(input("Quanto você ganha por hora? "))
+qtdHorasTrabalhadas = float(input("Quantas horas você trabalhou no mês? "))
+
+salarioBruto = valorHora * qtdHorasTrabalhadas
+salarioLiquido = 0
+ir = 0.5
+inss = 0.10
+fgts = 0.11
+descontoIr = 0
+descontoInss = 0
+descontoFgts = 0
+
+# Processamento
+valorHora = float(input("Quanto você ganha por hora? "))
+qtdHorasTrabalhadas = float(input("Quantas horas você trabalhou no mês? "))
+
+salarioBruto = valorHora * qtdHorasTrabalhadas
+salarioLiquido = 0
+ir = 0.5
+inss = 0.10
+fgts = 0.11
+descontoIr = 0
+descontoInss = 0
+descontoFgts = 0.11
+
+if salarioBruto == 900:
+  print("ISENTO")
+elif (salarioBruto >= 900 and salarioBruto < 1500):
+  descontoIr = salarioBruto * ir
+  salarioLiquido = salarioBruto - descontoIr
+elif (salarioBruto >= 1500 and salarioBruto < 2500):
+  descontoInss = salarioBruto * inss
+  salarioLiquido = salarioBruto - descontoInss
+elif (salarioBruto >= 2500):
+  descontoFgts = salarioBruto * fgts
+  salarioLiquido = salarioBruto - descontoFgts
+else:
+  print("Valor inválido")
+
+salarioBruto += - descontoFgts - descontoInss - descontoIr
+descontoTotal = descontoIr + descontoInss + descontoFgts
+valorTotalDesconto = salarioBruto
+salarioLiquido =  descontoTotal
+
+# Saida de dados
+notaFiscal = (f"Salario Bruto: R${salarioBruto}"
+               f"| Desconto IR: R${descontoIr}"
+               f"| Desconto INSS: R${descontoInss}"
+               f"| FGTS: R${descontoFgts}"
+               f"| Total Desconto: R${valorTotalDesconto}"
+               f"| Salario Liquido: R${salarioLiquido}")
+print("-=-" * 20)
+print("Nota Fiscal")
+print("-=-" * 20)
+
+print(f"\n{notaFiscal}\n")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Estrutura de repetição. FOR -> e uma estrutura que permite que você inclua um contador
+# Para que seja executado até o valor determinado.
+
+# FOR -> for i in range(1, 10): -> Permite que o comando se repete de acordo com o valor determinado (0, 100).
+
+num = int(input("Informe um número: "))
+
+for c in range(0, 10):
+  c = num * c
+  print(f"{num} x {c} = {c}")
+print("FIM")
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Entrada de dados
+
+i = int(input("Inicio: "))
+f = int(input("Fim: "))
+p = int(input("Passo: "))
+
+# Processamento e Saida de dados
+for c in range(i, f+1, p):
+  print(c)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+import time
+
+for c in range(10, 0, -1):
+  time.sleep(1) # Permite que em um curto perido de tempo o comando seja executado. -> time.sleep(2)
+  print(c)
+print("Estouro de fogos de artificio!")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+for c in range(1,50):
+  if c % 2 == 0:
+    print(f"O número é par: {c}")
+print(f"FIM")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+s = 0
+
+for c in range(1, 500):
+  if c % 3 == 0 and c % 2 != 0:
+    s += c
+    print(f"O número {c} é divisivel por 3")
+print("FIM")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+numero = int(input("Informe um número: "))
+
+print("TABUADA DE MULTIPLICAÇÃO")
+print("\n")
+for c in range(1, 11):
+  print(f"{numero} x {c} = {numero * c}")
+print("FIM")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+lista_homem_mais_velho = []
+lista_mulher_nova = []
+lista_idade_homem = []
+media_idade = int
+qtd_mulher = []
+
+for c in range(1, 5):
+  nome = input("Informe seu nome: ")
+  idade = int(input("Informe sua idade: "))
+  sexo = input("Informe seu sexo: ")
+
+  media_idade = idade / 4
+  qtd_mulher = len(lista_mulher_nova)
+
+  if (sexo == "M" and idade >= 18):
+    lista_homem_mais_velho.append(nome)
+    lista_idade_homem.append(idade)
+    print(f"O {nome} e Homem, e tem {idade} anos")
+
+  elif(sexo == "F" and idade >= 18):
+    print(f"A {nome} e Mulher, e tem {idade} anos")
+
+  elif(sexo == "M" and idade < 18):
+    print(f"O {nome} e Homem, e tem {idade} anos")
+
+  elif(sexo == "F" and idade < 18):
+    lista_mulher_nova.append(idade)
+    print(f"A {nome} e Mulher, e tem {idade} anos")
+
+  else:
+    print("Sexo Invalido")
+
+len(lista_homem_mais_velho)
+
+print("\n")
+
+print(f"A media de idade é: {media_idade}")
+print(f"A quantidade de mulheres menores de idade é: {qtd_mulher}")
+if (lista_homem_mais_velho): # Pergunta se a lista possui algum valor. Ou seja se teve algum homem maior de idade digitado
+  print(f"O Homem mais velho {lista_homem_mais_velho} tem {lista_idade_homem} anos")
+else:
+  print(f"Não possui nenhum homem com mais de 18 anos")
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+s = 'S'
+lista_maior = []
+lista_nome = []
+lista_menor = []
+
+while s == 'S':
+  nome = str(input("Informe um nome: "))
+  idade = int(input("Informe uma idade: "))
+
+  if idade >= 18:
+    lista_maior.append(idade)
+    lista_nome.append(nome)
+    print(f"A {nome} e Maior de idade")
+  else:
+    lista_menor.append(idade)
+    lista_nome.append(nome)
+    print(f"A {nome} e Menor de idade")
+
+  len(lista_menor)
+  len(lista_nome) 
+  len(lista_maior)
+  print(f"Os usuarios mais velho são {lista_nome} com {lista_maior} anos")
+  print(f"Os usuarios mais novo tem {lista_menor} anos")
+
+  s = str(input("Deseja continuar? [S/N]")).upper()
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+s = str("Sexo F - Feminino, M - Masculino")
+
+while s != "F" and s != "M":  
+  s = str(input("Informe seu sexow F/M: "))  
+  if s == "F":
+    print("Feminino")
+  elif(s == "M"):
+    print("Masculino")
+  else:
+    print("Sexo Inválido")
+    s = str(input("Informe seu sexo novamente F/M: ")).upper()
+print("FIM")
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+from random import randint
+user = str()
+computer = randint(0, 10) # Faz o computador pensar em um número aleatório entre 1 e 6
+tentativa = []
+
+while user != computer:
+  print("-=-" * 20)
+  print("Estou pensando em um número entre 0 e 10 .......")
+  print("-=-" * 20)
+
+  user = int(input("Informe um número de 0 a 10: "))
+  tentativa == computer
+  tentativa.append(user)
+
+  if user == computer:
+    print(f"Você VENCEU o número é {user}")
+  else:
+    print(f"Você PERDEU o número é que o computador pensou foi {computer}. Você digitou")
+
+print(f"Usuario tentou {len(tentativa)} vezes até acertar")
+print("FIM")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+escolha = int
+valor = int(input("Informe um valor: "))
+valor2 = int(input("Informe outro valor: "))
+
+
+while escolha != 5:
+  print(f"\n")
+  print(f"Valores Armazenados 1° valor: {valor} | 2° valor: {valor2}")
+  print(f"\n")
+  print("Escolha uma das opções abaixo: ")
+  print(f"\n")
+
+  print("[1] Soma")
+  print("[2] Multiplicar")
+  print("[3] Maior")
+  print("[4] Novo Número")
+  print("[5] Sair do Programa")
+  print(f"\n")
+
+  escolha = int(input("Escolha uma opção: "))
+
+  if escolha == 1:
+      s = 0
+      s = valor + valor2
+      print(f"A soma é {s}")
+
+  elif escolha == 2:
+      m = 0
+      m = valor * valor2
+      print(f"A multiplicação é {m}")
+
+  elif escolha == 3:
+    valor > valor2
+    print(f"O maior valor é: {valor}")
+
+  elif escolha == 4:
+    print("Novo Número")
+    novoValor = int
+    novoValor2 = int
+
+    novoValor = int(input("Informe um valor: "))
+    novoValor2 = int(input("Informe um valor: "))
+
+    valor2 = novoValor2
+    valor = novoValor
+
+  elif escolha == 5:
+    print("FIM do Programa")
+  else:
+    print("Opção Inválida")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+num = int(input("Informe um número: "))
+resultado = 1
+while num != 0:
+
+  for c in range(1, num + 1):
+    resultado *= c
+  print(f"O fatorial de {num} é {resultado}")
+  print("Caso deseja sair digite [0] - sair")
+  num = int(input("Informe um número: "))
+
+print("FIM")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# PEP 498 -> F"" Strings
+n = s = 0
+qtd_vl = 0
+while True:
+  n = int(input("Informe um número (Digite 999 para sair): "))
+  if n == 999:
+    break
+  s += n
+  qtd_vl += 1 # Armazena os valores digitados.
+print(f"Foram digitador {qtd_vl} números e a soma entre eles é {s}")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+n = s = 0
+while True:
+  print("-=-" * 20)
+  n = int(input("Qual tabuada deseja saber? "))
+  if n < 0:
+    break
+  for c in range(0, 10):
+    c += 1
+    s = n * c
+    print(f" {n} * {c} = {s}")
+print("Fim opreração")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+from random import randint
+jogada = 0
+par = impar = s = 0
+computer = randint(par, impar)
+
+while True:
+  user = int(input("Qual você deseja (Par ou Impar): "))
+  if user % 2 == 0:
+    par += 1
+  else:
+    impar += 1
+
+  if computer % 2 == 0:
+    par += 1
+  else:
+    impar += 1
+
+  jogada = par + impar
+
+  if jogada % 2 == 0:
+    par += 1
+    print(f"O computador jogou {computer} e o usuário jogou {user}. Total de {jogada}")
+
+  print(f"Você digitou {user} e o computador {computer}")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+produto = str
+valor = 0
+valorTotal = 0
+menorValor = int
+produtoCaro = str
+produtoBarato = str
+maisCaro = 0
+menorValor = 0
+
+while True:
+    
+  produto = str(input("Informe o nome do produto: "))
+  valor = int(input("Informe o valor do produto: "))
+
+  stop = str(input("Deseja continuar? [S/N]")).upper()
+
+  if valor < 1000:
+    produtoBarato = produto
+    menorValor = valor
+    valorTotal += valor 
+
+  elif valor > 1000:
+    produtoCaro = produto
+    maisCaro = valor
+    valorTotal += valor
+
+  if stop == "S":
+    continue
+  else:
+    break  
+
+print("------- FIM PROGRAMA ------\n")
+print(f"O valor total é {valorTotal}") # Deu Certo
+print(f"O produto mais barato é {produtoBarato} R${menorValor}") # Deu Certo
+print(f"O produto mais caro é {produtoCaro} custa R${maisCaro}") # Deu Certo
+
+
