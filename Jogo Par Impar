@@ -1,1 +1,44 @@
+from random import randint
 
+jogada = 0
+par = impar = 0
+computer = randint(0, 100)
+
+while True:
+  print("-=-" * 20)
+  print("Jogo do IMPAR ou PAR")
+  print("-=-" * 20)
+  
+  user = int(input("Digite um valor ou (0 - para sair): "))
+  if user == 0:
+    break
+  
+  jogadaUser = str(input("Escolha P/I: ")).upper()
+  computer = randint(0, 100)
+  jogada = user + computer
+
+  print("-=-" * 20)
+  
+  if jogada % 2 == 0:
+    par += 1
+    if jogadaUser == "P":
+      print(f"Usuario Venceu escolheu {user} e o computador {computer}. Valor foi {jogada} PAR ")
+    else:
+      print(f"Computador Venceu escolheu {computer} e o usuario {user}. Valor foi {jogada} IMPAR")
+      break
+
+  print("-=-" * 20)
+
+  if jogada % 2 != 0:
+    impar += 1
+    if jogadaUser == "I":
+      print(f"Usuario Venceu escolheu {user} e o computador {computer}. Valor foi {jogada} IMPAR ")
+    else:
+      print(f"Computador Venceu escolheu {computer} e o usuario {user}. Valor foi {jogada} IMPAR")
+      break
+
+  qtd_jogada_par = par
+  qtd_jogada_impar = impar
+  totalJogada = qtd_jogada_par + qtd_jogada_impar
+  print(f"O total de jogadas foi {totalJogada}")
+print("Fim do Programa")
