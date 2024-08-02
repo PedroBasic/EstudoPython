@@ -1,0 +1,40 @@
+# No exemplo abaixo utilizamos o indice para filtra cada dado.
+
+times_brasileirao_2024 = (
+    "Flamengo",
+    "Palmeiras",
+    "Atlético Mineiro",
+    "São Paulo",
+    "Internacional",
+    "Fluminense",
+    "Grêmio",
+    "Santos",
+    "Corinthians",
+    "Vasco",
+    "Botafogo",
+    "Cruzeiro",
+    "Athletico Paranaense",
+    "Bahia",
+    "Fortaleza",
+    "Ceará",
+    "Goiás",
+    "Coritiba",
+    "América Mineiro",
+    "Bragantino"
+)
+
+# Exibindo a lista de times
+for time in times_brasileirao_2024:
+    print(time)
+
+# Exibindo os 5 primeiros colocados, realizarmos a busca atravês de seu indice [:5].
+print(f"Os 5 primeiros colocados são: {times_brasileirao_2024[:5]}")
+
+# Exibindo os 4 últimos colocados, realizarmos a busca atravês de seu indice [16:]. Temos o total de 19 times aplicamos o indice '16'-> 16, 17, 18, 19.
+print(f"Os últimos 4 são: {times_brasileirao_2024[16:]}")
+
+# Exibindo times em ordem alfabetica utilizando o termo Sorted().
+print(f"Times em ordem Alfabetica: {sorted(times_brasileirao_2024)}")
+
+# Exibindo o time na 8° posição do brasileirão.
+print(f"O {times_brasileirao_2024[7]} está na 8° posição.")
