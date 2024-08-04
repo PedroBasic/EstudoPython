@@ -1,0 +1,19 @@
+# Random permite gerarmos um número aleatório.
+import random
+valores = ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10')
+aleatorio = random.sample(valores, 4)
+resultado = ""
+
+# Aqui estamos realizando a conversão do tipo. Para que os valores se tornem inteiros e seja possível descobri qual e o maior e menor.
+valoresAleatorios = [int(v) for v in aleatorio]
+
+# Outro metodo de realizar essa conversão.
+#valoresA = tuple(int(v) for v in aleatorio)
+
+for valor in valoresAleatorios:
+    resultado += str(valor) + " "
+
+print(f'Os valores sorteados são: {resultado}')
+print(f'Maior valor sorteado foi: {max(valoresAleatorios)}')
+print(f'Menor valor sorteado foi: {min(valoresAleatorios)}')
+
