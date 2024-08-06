@@ -1,0 +1,39 @@
+# Segue abaixo uma resolutiva diferente do excercisio Curso Em Video. EXR - 57 - Trabalhando com Tuplas.
+guardado = " "
+pares = " "
+pos = 0
+poss = ""
+msg = ("Ops: Não possue números pares.")
+
+num = (int(input("Informe um número: ")),
+       int(input("Informe outro número: ")),
+       int(input("Informe mais um número: ")),
+       int(input("Informe o último número: ")))
+
+# Aqui armazenarmos os valores digitados convertendo em string.
+guardado = num
+
+#Aqui criamos um loop para indentificar cada número digitado dentro da variavel guardado().
+for n in guardado:
+    if n == 9:
+        pos += 1
+
+# Abaixo estamos buscando a posição que está localizado o valor 3, caso for digitado. Realizamos a busca atraves de seu indince
+for i, v in enumerate(guardado):57
+    if v == 3:
+        v = i
+        poss = v        
+     
+# Abaixo convertemos os valores guardados para int() novamente, para podermos indentificar os pares.
+valoresGuardados = [int(v) for v in guardado]
+   
+# Abaixo estamos trazendo os valores pares e guardando em um tupla convertendo o num em str().
+for num in valoresGuardados:
+    if num % 2 == 0:
+        pares += str(num) + " "
+
+print(f"\n")
+print(f"Valores digitados: {guardado}") # -> Com Sucesso.
+print(f"O valor 9 apareceu: {pos} vezes.") # -> Com Sucesso
+print(f"O número 3 apareceu: {poss}º posição.") # -> Com Sucesso
+print(f"O números pares digitados são.{pares}") # - Com Sucesso
