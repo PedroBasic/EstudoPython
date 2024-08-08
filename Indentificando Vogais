@@ -1,0 +1,46 @@
+palavras = ('aprender', 'programar', 'linguagem', 'python', 
+            'curso', 'gratis', 'estudar', 'praticar')
+
+# Aqui criamos variaveis tipo STRING para que possamos amarzena cada valor em seu determinado valor.
+aprender = ''
+programar = '' 
+linguagem = ''
+python = ''
+curso = ''
+gratis = ''
+estudar = ''
+praticar = ''
+
+# Abaixo estamos indentificando a vogais de cada palavra. Utilizando o for para seguirmos em sequencia de cada item, Junto e utilizado o Enumerate, para que possamos coletar o indice de cada palavra.
+for p, l in enumerate(palavras):
+    if l == "aprender":
+        aprender += l[0] +  " " + l[3]  +  " " + l[6]
+        print(f"Na palavra {l} temos {aprender}")
+
+    if l == "programar":
+        programar += l[2] +  " " + l[5]  +  " " + l[7]
+        print(f"Na palavra {l} temos {programar}")
+
+    if l == "linguagem":
+        linguagem += l[1] +  " " + l[4:6]  +  " " + l[7]
+        print(f"Na palavra {l} temos {linguagem}")
+
+    if l == "python":
+        python += l[-2]
+        print(f"Na palavra {l} temos {python}")
+
+    if l == "curso":
+        curso += l[1] +  " " + l[-1]
+        print(f"Na palavra {l} temos {curso}")
+
+    if l == "gratis":
+        gratis += l[2] +  " " + l[4]
+        print(f"Na palavra {l} temos {gratis}")
+
+    if l == "estudar":
+        estudar += l[0] +  " " + l[3]  +  " " + l[-2]
+        print(f"Na palavra {l} temos {estudar}")
+
+    if l == "praticar":
+        praticar += l[2] +  " " + l[4]  +  " " + l[-2]
+        print(f"Na palavra {l} temos {praticar}")
